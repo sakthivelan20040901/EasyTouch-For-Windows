@@ -1,0 +1,13 @@
+﻿<Window x:Class="FloatingBall.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Floating Ball" Height="70" Width="70" WindowStyle="None" AllowsTransparency="True" Background="Transparent">
+    <Grid>
+        <Ellipse x:Name="EllipseBall" Width="70" Height="70" Fill="Black" Opacity="0.7"
+                 MouseDown="EllipseBall_MouseDown"
+                 TouchDown="EllipseBall_TouchDown"
+                 TouchMove="EllipseBall_TouchMove"
+                 TouchUp="EllipseBall_TouchUp"
+                 MouseEnter="EllipseBall_MouseEnter"/>
+    </Grid>
+</Window>
